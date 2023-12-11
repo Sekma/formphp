@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="width: 500px; padding: 50px; margin: auto;">
+    <h1>Formulaire</h1>
+    <form action="check.php" method="post" enctype="multipart/form-data">
+        <label for="name">Name: <input name="name" type="text" placeholder="Entrez votre nom" required></label><br><br>
+        <label for="email">e-mail: <input name="email" type="text" placeholder="Entrez votre email" required></label><br><br>
+
+    <p>Les conférences auxquelles vous souhaitez assister</p>
+        <label><input type="checkbox" name="choice[]" value="choice_1">L'accessibilité numérique à l'ère de l'intelligence artificiellet</label><br>
+        <label><input type="checkbox" name="choice[]" value="choice_2">Expliciter l'implicite — je veux juste un site web</label><br>
+        <label><input type="checkbox" name="choice[]" value="choice_3">La revue de code (bienveillante)</label><br>
+        <label><input type="checkbox" name="choice[]" value="choice_4">La sécurité de demain dans le web d'aujourd'hui : mission impossible ?</label><br><br>
+
+    <p>Avez-vous déjà assisté à des ateliers Paris Web ?</p>
+        <label><input type="radio" name="alreadyCame" value="Oui"> Oui</label>
+        <label><input type="radio" name="alreadyCame" value="Non"> Non</label><br><br>
+
+    <p>Télechargez votre photo de profil</p>
+    <input type="file" name="avatar"><br><br>
+		
+    <input type="submit">
+  
+</form>
+</body>
+</html>
